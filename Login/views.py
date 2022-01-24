@@ -1,4 +1,3 @@
-from django.http import response
 from django.shortcuts import render
 from multiprocessing import context
 # Recursos de rest_framework
