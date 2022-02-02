@@ -45,3 +45,10 @@ class PrimerTablaDetail(APIView):
                 datas = serializer.data
                 return Response(datas, status = status.HTTP_201_CREATED)
             return Response(serializer.errors,status = status.HTTP_400_BAD_REQUEST)
+
+        def delete(self, request , pk , format=None):
+             idResponse = self.get_object(pk)
+             if idResponse != "El dato no exite":
+                 idResponse.delete()
+                 return Response("El dato se elimino", status= status.HTTP_201_CREATED)
+             return Response("Nose encontro", status= status.HTTP_400_BAD_REQUEST)
