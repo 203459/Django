@@ -21,6 +21,9 @@ pip install python-dotenv
 ```bash
 pip install python-decouple
 ```
+```bash
+pip install Pillow
+```
 
 ## Agregar la libreria a INSTALLED_APPS en settings
 ```bash
