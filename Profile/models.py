@@ -6,4 +6,4 @@ from django.contrib.auth.models import User
 
 class Profile(models.Model):
     id_user = models.OneToOneField(User, on_delete= models.CASCADE, null=False, blank=False)
-    url_img = models.ImageField(null=True,blank=True,default='', upload_to='assets/img')
+    url_img = models.ImageField(null=True,blank=True,default='', upload_to='img/')

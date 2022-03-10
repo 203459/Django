@@ -2,8 +2,8 @@ from rest_framework import routers, serializers, viewsets
 
 from Profile.models import Profile
 
-class ProfileSerializers(serializers.ModelSerializer):
+class ProfileSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Profile
-        fields = ('_all_')
+        fields = ('__all__')
