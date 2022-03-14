@@ -29,3 +29,11 @@ pip install Pillow
 ```bash
  'rest_framework'
 'rest_framework.authtoken',
+```
+## Agregar en settings: MIDDLEWARE
+```bash
+ 'corsheaders.middleware.CorsMiddleware',
+```
+## Agregar en settings
+``` bash
+ 'http://localhost:3000',
